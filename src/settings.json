@@ -91,7 +91,7 @@
           "name": "Spotify",
           "desc": "Spotify search",
           "path": "/spotify/search?q=",
-          "status": "update",
+          "status": "ready",
           "params": {
             "q": "Search query"
           }
