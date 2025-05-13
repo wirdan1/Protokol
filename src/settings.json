@@ -27,7 +27,7 @@
           "name": "HydroMind",
           "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
           "path": "/ai/hydromind?text=&model=",
-          "status": "ready",
+          "status": "update",
           "params": {
             "text": "Teks atau perintah untuk chat AI",
             "model":"1See the list of supported AI models here: https://mind.hydrooo.web.id"
@@ -42,7 +42,7 @@
           "name": "Blue Archive",
           "desc": "Blue Archive Random Images",
           "path": "/random/ba",
-          "status": "ready"
+          "status": "update"
         }
       ]
     },
@@ -53,7 +53,7 @@
           "name": "YouTube",
           "desc": "Video search",
           "path": "/search/youtube?q=",
-          "status": "ready",
+          "status": "update",
           "params": {
             "q": "Search query"
           }
