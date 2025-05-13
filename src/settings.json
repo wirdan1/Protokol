@@ -63,6 +63,15 @@
           "params": {
             "url": "Download url"
           }
+        },
+        {
+          "name": "Spotify",
+          "desc": "Spotify Download",
+          "path": "/spotify/download?url=",
+          "status": "ready",
+          "params": {
+            "url": "Download url"
+          }
         }
       ]
     },
