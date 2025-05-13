@@ -59,7 +59,7 @@
           "name": "Tiktok",
           "desc": "Tiktok Download",
           "path": "/download/tiktok?url=",
-          "status": "update",
+          "status": "ready",
           "params": {
             "url": "Download url"
           }
