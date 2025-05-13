@@ -65,6 +65,15 @@
           }
         },
         {
+          "name": "Twitter",
+          "desc": "Twitter Download",
+          "path": "/download/x?url=",
+          "status": "ready",
+          "params": {
+            "url": "Download url"
+          }
+        },
+        {
           "name": "Spotify",
           "desc": "Spotify Download",
           "path": "/spotify/download?url=",
