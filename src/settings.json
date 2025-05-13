@@ -53,6 +53,20 @@
       ]
     },
     {
+      "name": "Download",
+      "items": [
+        {
+          "name": "Tiktok",
+          "desc": "Tiktok Download",
+          "path": "/search/youtube?url=",
+          "status": "update",
+          "params": {
+            "url": "Download url"
+          }
+        }
+      ]
+    }
+    {
       "name": "Search Tools",
       "items": [
         {
