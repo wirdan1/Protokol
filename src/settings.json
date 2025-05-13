@@ -85,6 +85,17 @@
       ]
     },
     {
+      "name": "Random",
+      "items": [
+        {
+          "name": "BMKG gempa",
+          "desc": "Info BMKG",
+          "path": "/info/bmkg",
+          "status": "ready"
+        }
+      ]
+    },
+    {
       "name": "Search Tools",
       "items": [
         {
