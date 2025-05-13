@@ -58,7 +58,7 @@
         {
           "name": "Tiktok",
           "desc": "Tiktok Download",
-          "path": "/search/youtube?url=",
+          "path": "/download/tiktok?url=",
           "status": "update",
           "params": {
             "url": "Download url"
