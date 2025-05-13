@@ -77,6 +77,15 @@
           "params": {
             "q": "Search query"
           }
+        },
+        {
+          "name": "Spotify",
+          "desc": "Spotify search",
+          "path": "/spotify/search?q=",
+          "status": "update",
+          "params": {
+            "q": "Search query"
+          }
         }
       ]
     }               
