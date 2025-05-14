@@ -23,6 +23,15 @@
             "text": "Text for luminai to respond to"
           }
         },
+        {
+          "name": "Autoai",
+          "desc": "Talk with luminai",
+          "path": "/api/autoai?text=&prompt=",
+          "status": "ready",
+          "params": {
+            "text": "Text for luminai to respond to"
+          }
+        },
        {
           "name": "HydroMind",
           "desc": "See the list of supported AI models here: https://mind.hydrooo.web.id",
