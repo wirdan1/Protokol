@@ -9,7 +9,7 @@ module.exports = function(app) {
         return data;
     }
 
-    app.get('download/ytmp3', async (req, res) => {
+    app.get('/download/ytmp3', async (req, res) => {
         const url = req.query.url;
         if (!url) {
             return res.status(400).json({ status: false, message: 'Masukkan parameter url.' });
