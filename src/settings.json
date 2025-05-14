@@ -96,6 +96,17 @@
       ]
     },
     {
+      "name": "Maker",
+      "items": [
+        {
+          "name": "Brat",
+          "desc": "Brat img",
+          "path": "/api/brat?text=",
+          "status": "ready"
+        }
+      ]
+    },
+    {
       "name": "Search Tools",
       "items": [
         {
