@@ -65,6 +65,24 @@
           }
         },
         {
+          "name": "Ytmp3",
+          "desc": "YouTube Audio Download",
+          "path": "/download/ytmp3?url=",
+          "status": "ready",
+          "params": {
+            "url": "Download url"
+          }
+        },
+        {
+          "name": "Ytmp4",
+          "desc": "YouTube Audio Download",
+          "path": "/download/ytmp4?url=",
+          "status": "ready",
+          "params": {
+            "url": "Download url"
+          }
+        },
+        {
           "name": "Twitter",
           "desc": "Twitter Download",
           "path": "/download/x?url=",
