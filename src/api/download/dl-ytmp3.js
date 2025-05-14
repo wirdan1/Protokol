@@ -1,23 +1,47 @@
 const axios = require('axios');
 
 module.exports = function(app) {
-    async function fetchYTMP3(url) {
-        if (!url) throw new Error('Parameter URL diperlukan.');
-        const endpoint = `https://api.akuari.my.id/downloader/youtubeaudio?link=${encodeURIComponent(url)}`;
-        const { data } = await axios.get(endpoint);
-        if (!data || !data.status) throw new Error('Gagal mengambil data.');
-        return data;
+    async function getSaveTubeMP3(url) {
+        const apiUrl = `https://api.nekorinn.my.id/downloader/savetube?url=${encodeURIComponent(url)}&format=mp3`;
+
+        try {
+            const res = await axios.get(apiUrl, {
+                validateStatus: () => true
+            });
+
+            const data = res.data;
+
+            if (!data || !data.status || !data.result || !data.result.download) {
+                throw new Error('Gagal mendapatkan data dari API SaveTube.');
+            }
+
+            return data;
+        } catch (err) {
+            throw new Error(err.message || 'Gagal mengambil data dari API SaveTube.');
+        }
     }
 
     app.get('/download/ytmp3', async (req, res) => {
-        const url = req.query.url;
+        const { url } = req.query;
         if (!url) {
-            return res.status(400).json({ status: false, message: 'Masukkan parameter url.' });
+            return res.status(400).json({ status: false, error: 'URL is required' });
         }
 
         try {
-            const result = await fetchYTMP3(url);
-            res.json({ status: true, result });
+            const saveTubeData = await getSaveTubeMP3(url);
+            res.json({
+                status: true,
+                creator: "Danz-dev",
+                result: {
+                    title: saveTubeData.result.title,
+                    type: saveTubeData.result.type,
+                    format: saveTubeData.result.format,
+                    quality: saveTubeData.result.quality,
+                    duration: saveTubeData.result.duration,
+                    thumbnail: saveTubeData.result.thumbnail,
+                    download: saveTubeData.result.download
+                }
+            });
         } catch (err) {
             res.status(500).json({ status: false, error: err.message });
         }
