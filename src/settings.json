@@ -123,6 +123,17 @@
       ]
     },
     {
+      "name": "Canvas",
+      "items": [
+        {
+          "name": "Ngl Image",
+          "desc": "Kirim pesan anonim",
+          "path": "/api/ngl?title=&text=",
+          "status": "ready"
+        }
+      ]
+    },
+    {
       "name": "Maker",
       "items": [
         {
