@@ -127,7 +127,7 @@
       "items": [
         {
           "name": "Fake NGL",
-          "desc": "Kirim pesan anonim",
+          "desc": "Create pesan anonim",
           "path": "/api/ngl?title=&text=",
           "status": "ready"
         },
