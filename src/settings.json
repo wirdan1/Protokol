@@ -166,6 +166,17 @@
           }
         }
       ]
-    }               
+    },
+    {
+      "name": "Status",
+      "items": [
+        {
+          "name": "Ping",
+          "desc": "Status website",
+          "path": "/api/status",
+          "status": "ready"
+        }
+      ]
+    }
   ]
 }
