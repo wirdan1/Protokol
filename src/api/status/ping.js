@@ -3,7 +3,7 @@ const os = require('os');
 module.exports = function (app) {
     const startTime = Date.now();
     let totalRequest = 0;
-    const totalFitur = 66;
+    const totalFitur = 16;
     const domain = 'admindanzgtg.biz.id';
 
     function formatRuntime(ms) {
