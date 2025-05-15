@@ -123,19 +123,14 @@
       ]
     },
     {
-      "name": "Canvas",
+      "name": "Create Image",
       "items": [
         {
-          "name": "Ngl Image",
+          "name": "Fake NGL",
           "desc": "Kirim pesan anonim",
           "path": "/api/ngl?title=&text=",
           "status": "ready"
-        }
-      ]
-    },
-    {
-      "name": "Maker",
-      "items": [
+        },
         {
           "name": "Brat",
           "desc": "Brat img",
