@@ -27,7 +27,7 @@ module.exports = function (app) {
 
         res.json({
             status: true,
-            creator: "FlowFalcon",
+            creator: "Hookrest-Team",
             result: {
                 status: "Aktif",
                 totalrequest: totalRequest.toString(),
